@@ -24,7 +24,7 @@ class BankAccount {
                 + "3. Withdraw Cash" + newLine + "4. Bank Statement" + newLine + "5. Exit");
     }
 
-    void getData() {
+    public void getData() {
         Scanner inputValue = new Scanner(System.in);
         System.out.print("Select Choice: ");
         int val = inputValue.nextInt();
@@ -56,20 +56,20 @@ class BankAccount {
     }
 
 
-    void addAccount() {
+    public void addAccount() {
 //        get user info's
         Scanner userName = new Scanner(System.in);
         System.out.print("Your Name: ");
         holderName = userName.next();
 
         Scanner userAccountNo = new Scanner(System.in);
-        System.out.print("Your Account No: ");
+        System.out.println("Your Account No: ");
         holderAccount = userAccountNo.nextLong();
 
         System.out.println(this.holderName + " " + this.holderAccount);
     }
 
-    void depositCash() {
+    public void depositCash() {
         System.out.println("Your initial balance: " + this.initialBalance);
 //       Enter your Details
         Scanner accNo = new Scanner(System.in);
@@ -92,12 +92,12 @@ class BankAccount {
 
     }
 
-    void withdrawCash() {
+    public void withdrawCash() {
         System.out.println("Your initial balance: " + this.initialBalance);
 
 //        Enter your info
         Scanner accNo = new Scanner(System.in);
-        System.out.println("Your No: " + accNo);
+        System.out.println("Your Account No: " + accNo);
         long acc = accNo.nextLong();
 //        amount to withdraw
         if (acc == holderAccount){
@@ -105,7 +105,7 @@ class BankAccount {
             Scanner newAmount = new Scanner(System.in);
             System.out.print("Amount: ");
             int withAmount = newAmount.nextInt();
-//        dedduct from current balance
+//        deduct from current balance
             this.initialBalance -= withAmount;
             System.out.println("Balance: " + this.initialBalance);
         }
@@ -115,10 +115,11 @@ class BankAccount {
         }
     }
 
-    void bankStatement(){
+    public void bankStatement(){
         String newLine = System.getProperty("line.separator");
         System.out.println("***Bank Details***");
-        System.out.println("Name: "+ this.holderName + newLine + "Account No: "+this.holderAccount + newLine +
+        System.out.println("Name: "+ this.holderName + newLine + "Account No: "+
+                this.holderAccount + newLine +
                 "Balance: " + this.initialBalance);
 
     }
