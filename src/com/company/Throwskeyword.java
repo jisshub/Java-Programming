@@ -27,7 +27,7 @@ class MySecClass extends MyFirstClass{
 
     public void readFile() throws FileNotFoundException{
         //        read file
-        Scanner eachLine = new Scanner(newFile);
+        Scanner eachLine = new Scanner(newFile) ;
         while (eachLine.hasNextLine()) {
             String data = eachLine.nextLine();
             System.out.println(data);
