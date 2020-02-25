@@ -10,10 +10,9 @@ public class StringMethodPractice {
         System.out.println(Arrays.toString(array1));
 
         for (int i = 0; i < array1.length ; i++) {
-            for (String eachSent: array1
-                 ) {
-//                if(Character.isLetter(eachSent.charAt(i)) && i != enfofLine)
-            }
+            System.out.println(array1[i]);
+            System.out.println(array1[i].length());
+
         }
     }
 }
