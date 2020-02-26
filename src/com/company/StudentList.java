@@ -20,30 +20,40 @@ class MyStudent{
         limit = s1.nextInt();
     }
 }
-class StudentNames extends MyStudent{
+class StudentNames extends MyStudent {
     ArrayList<String> studList;
-    public void setNames(){
+
+    public void setNames() {
         studList = new ArrayList<>();
-        while (limit > 0){
+        while (limit > 0) {
             Scanner name = new Scanner(System.in);
             System.out.println("Name: ");
             String studName = name.next();
             studList.add(studName);
-            limit --;
+            limit--;
         }
         System.out.println("Names List: " + studList.toString());
     }
 
-    public void getNames(){
-        for (String eachName: studList
-             ) {
-            System.out.println("name: "+ eachName);
-//            char eachLetter = eachName.split();
-//            if (eachLetter){
+    //    get student names starts with s
+    public void getNames() {
+        ArrayList<String> sArray = new ArrayList<>();
+        ArrayList<String> notSArray = new ArrayList<>();
+        String firstChar = "s";
+        for (String eachName : studList
+        ) {
 
+            if (eachName.substring(0,1).equals(firstChar)) {
+                sArray.add(eachName);
             }
+            else {
+                notSArray.add(eachName);
+            }
+
         }
+        System.out.println("Resultant Array: " + sArray.toString());
+        System.out.println("Resultant Array: " + notSArray.toString());
+
     }
-
-
 }
+
