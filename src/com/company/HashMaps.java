@@ -61,6 +61,7 @@ class getMyHashes extends MyHashMaps{
 
 
         }
+//        or use below forEach.
 
 //        hmap.forEach((key, value) -> System.out.println(key + " " + value.studentName + " " + value.studentAge +" " + value.studentMarks));
     }

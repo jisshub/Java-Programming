@@ -21,13 +21,12 @@ class MyBank {
     int holderAccount;
     String holderName;
 
-    //    create a constructor
-//    MyBank(float initialBal) {
     float Bal = initialBal;
     String newLine = System.getProperty("line.separator");
 
     void getbaseInfo(){
 
+//
 
         System.out.println("1. Add Account" + newLine + "2. Deposit Cash" + newLine+ "3. Withdraw Cash" + newLine + "4. Bank Statement" + newLine + "5. Exit");
         }

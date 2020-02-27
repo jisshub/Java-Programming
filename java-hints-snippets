@@ -1,0 +1,22 @@
+-- get the type of a variable,
+
+System.out.println(myString.getClass().getName());
+
+-- iterate thru string and each characters
+
+for (int j = 0; j < myString.length() ; j++) {
+        System.out.println(myString.charAt(j));
+    }
+
+
+
+-- to exit from the switch condition
+
+case 5:
+                System.out.println("Thanks For Banking!");
+                System.exit(0);
+
+
+
+
+
