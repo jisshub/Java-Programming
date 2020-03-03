@@ -8,7 +8,7 @@ public class ArraySamples {
     public static void main(String[] args) {
 //        initialize an array
 //        largest element in array
-        int myArray2[] = {5, 6, 7, 1, 2};
+        int myArray2[] = {5, 6, 7, 10, 2};
         int j = 1;
         for (int i = 0; i < myArray2.length; i++) {
 
@@ -51,7 +51,7 @@ public class ArraySamples {
 //        reverse an array
 //        declare a new array
         System.out.println("** Array Reverse ***");
-        int myArray[] = {5, 6, 7, 1, 2};
+        int[] myArray = {5, 6, 7, 1, 2};
         for (int x = myArray.length; x >= 0; x--) {
             System.out.println(myArray[x - 1]);
         }
